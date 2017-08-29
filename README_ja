@@ -1,0 +1,207 @@
+**********************************************
+  AzPainter for Linux
+  Copyright (C) 2013-2017 Azel
+
+  http://azsky2.html.xdomain.jp/
+  http://osdn.net/projects/azpainter/
+
+  <azelpg@gmail.com>
+**********************************************
+
+
+=====================================
+ * 概要
+=====================================
+
+主にイラスト描画用のフルカラーペイントソフトです。
+レタッチとしても使えますが、ドット編集や画像編集には向いていません。
+
+- 内部では、色は 16bit カラー (15bit 固定小数点数) で処理され、
+  精度を保てるかわりにメモリを多く消費します。
+- 筆圧対応 (XInput2 使用)
+
+
+=====================================
+ * 動作環境
+=====================================
+
+- Linux
+- X11R6 以降
+  (筆圧を認識したい場合は X11R7.5 以降)
+
+
+=====================================
+ * コンパイルに必要なもの
+=====================================
+
+- gcc
+- make
+
+- Xlib       (libX11)
+- Xext       (libXext)
+- XInput2    (libXi)
+- freetype2  (libfreetype)
+- fontconfig (libfontconfig)
+- zlib
+- libpng
+- libjpeg
+
+
+＃ 各ディストリビューションごとの必要なパッケージ
+------------------------------------------------
+
+※ パッケージ名は変化している場合があります。
+
+>> Debian/Ubuntu 系
+
+  gcc make libx11-dev libxext-dev libxi-dev libfreetype6-dev
+  libfontconfig1-dev zlib1g-dev libjpeg-dev
+
+  libpng-dev (Debian 9.0/Ubuntu 16.10 以降)
+  または libpng12-dev (Debian 8.0/Ubuntu 16.04 以前)
+
+>> RedHat 系
+
+  gcc make libX11-devel libXext-devel libXi-devel libfreetype6-devel
+  libfontconfig-devel zlib-devel libpng-devel libjpeg-devel
+
+>> Arch Linux
+
+  gcc make libx11 libxext libxi freetype2 fontconfig zlib
+  libpng libjpeg-turbo
+  
+  (GUI 環境がインストールされていれば、
+   これらはすでにインストールされている場合が多い)
+
+
+=====================================
+ * コンパイル・インストール
+=====================================
+
+$ tar xf azpainter-2.1.0.tar.bz2
+$ cd azpainter-2.1.0
+
+$ ./configure
+$ make
+$ sudo make install-strip
+
+[*] AzPainter ver 1.x がインストールされている場合、
+    実行ファイルやインストールファイルは上書きされます。
+    そのままでも特に問題はありませんが、
+    ver 1.x でしか使わないインストールファイルが残ってしまうので、
+    先に ver 1.x をアンインストールしておく方がすっきりします。
+
+[*] "install-strip" は、実行ファイル内のデバッグ情報などを削除することで
+    ファイルサイズを減らしてインストールします。
+    "install-strip" の代わりに "install" でデバッグ情報を含んだまま
+    インストールすることもできます。
+
+デフォルトで /usr/local 下にインストールされます。
+./configure 実行時にオプションを指定すると、コンパイルの設定を変更できます。
+
+
+＃ /usr にインストール
+-------------------------
+
+$ ./configure --prefix=/usr
+
+
+＃ freetype のヘッダファイルが見つからない場合
+----------------------------------------------
+
+「--with-freetype-dir」でヘッダファイルの場所を指定してください。
+
+[例] $ ./configure --with-freetype-dir=/usr/include/freetype2
+
+
+=====================================
+ * 設定ファイル
+=====================================
+
+"~/.azpainter" に設定ファイルが保存されます。
+
+
+=====================================
+ * ver.1 からの移行について
+=====================================
+
+ver.1 -> ver.2 は大幅な変更となっております。
+
+ver.2 の設定ファイルは、ver.1 と同じ場所に作成されます。
+ただし、各ファイル名はバージョンごとに異なるので、
+ver.1 のデータはそのまま残ります。
+
+ver.1 の設定ファイルが必要ない場合は、削除して構いません。
+(main.conf, brush.dat, key.dat, palette.dat)
+
+[!] グラデーションデータ (grad.dat) は ver.1 と同じフォーマットのため、
+    そのまま同じファイル名で共有します。
+
+ブラシとテクスチャの画像は、そのまま ver.1 と同じ状態で、
+引き続き使うことが出来ます。
+
+
+＃ データ移行
+---------------------
+
+ver.1 の設定ファイルが存在する場合、
+初回起動時に ver.1 のデータを ver.2 に移行するかどうかの
+メッセージが出るので、それに「はい」と答えれば、
+ver.1 のブラシデータとカラーパレットデータを ver.2 用に変換することが出来ます。
+ブラシとカラーパレット以外のデータは移行されません。
+
+
+=====================================
+ * 使い方
+=====================================
+
+デスクトップのメインメニューの「グラフィックス」カテゴリーに
+ショートカットが作成されているので、そこから起動できます。
+(ショートカットやアイコンはすぐに反映されない場合があります)
+
+端末から起動する場合は、以下のコマンドで起動します。
+
+$ azpainter
+
+
+=====================================
+ * アンインストール
+=====================================
+
+＃ Makefile を使う
+-----------------------
+
+./configure コマンドでコンパイルした時のファイルがそのまま
+残っている場合は、./configure した時と同じディレクトリ上で
+以下のコマンドを実行すると、ファイルをアンインストールできます。
+(設定ファイルのディレクトリは残ります)
+
+$ sudo make uninstall
+
+
+＃ 手動でファイル削除
+-----------------------
+
+手動でアンインストールする場合は、以下のファイルを削除してください。
+<INSTALLDIR> はインストール先のディレクトリ (デフォルトで "/usr/local")。
+
+* ディレクトリ
+
+<INSTALLDIR>/share/azpainter
+~/.azpainter (設定ファイル)
+
+* ファイル
+
+<INSTALLDIR>/share/applications
+  azpainter.desktop
+
+<INSTALLDIR>/share/mime/packages
+  azpainter.xml
+
+<INSTALLDIR>/share/icons/hicolor/48x48/apps
+  azpainter.png
+  application-x-azpainter-apd.png
+
+<INSTALLDIR>/share/icons/hicolor/scalable/apps
+  azpainter.svg
+  application-x-azpainter-apd.svg
