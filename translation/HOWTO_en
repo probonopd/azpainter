@@ -1,0 +1,82 @@
+=======================================
+  Translation method
+=======================================
+
+This section describes the procedure
+for creating a translation file for English as an example.
+
+
+<1> Copy the translation source text file,
+    for the language you want to translate
+--------------------------------------------------------
+
+$ cp ja en_US
+
+- File name, please in the language name of two characters or five characters.
+
+- If the language name of the system to match the name of the five characters
+  is the file is read into the priority,
+  if there is nothing that matches the name of five characters,
+  it is loaded If there is a match with the name of the first two characters will.
+
+- If the language of the system was en_US,
+  first to look for a en_US.mtr, if not found, look for the en.mtr.
+  It is the case there was no, embedded in the soft default string (English) is used.
+
+
+<2> Edit the copied text file
+---------------------------------------
+
+[Example]
+ja:    3=はい
+en_US: 3=Yes
+
+
+<3> Compile a tool to convert from text to binary data
+---------------------------------------------------------
+
+Compile the mtrconv.c, it produces an executable file.
+
+When you run the following command in a mtrconv.c directory,
+you can easily create by using the Makefile.
+
+$ make
+
+
+<4> Using tools, generate the binary data
+------------------------------------------
+
+$ ./mtrconv en_US en_US.mtr
+
+The text file name of the conversion source to the first argument,
+Specify the file name of the binary data to be output to the second argument.
+
+
+<5> Confirmation
+-----------------------
+
+Actually running, make sure that it can be translated.
+
+$ azpainter --trfile en_US.mtr
+
+With --trfile option,
+it can be loaded by specifying the translation file directly.
+
+
+<6> Copy the mtr file, the installation directory of application
+-----------------------------------------------------------------
+
+If you want to read the optimal translation file automatically,
+from the language of the system,
+you need to put the mtr file to the application data directory for.
+
+Location of put the translation file directory,
+if you compile from the source file,
+the default in the '/usr/local/share/azpainter/tr'.
+If you installed in a different location,
+grass die and copy it to that location.
+
+# cp en_US.mtr /usr/local/share/azpainter/tr
+
+Now, because of the system of the language file is opened in default
+at the time of start-up, if the system is en_US en_US.mtr is loaded.
