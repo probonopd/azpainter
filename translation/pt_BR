@@ -1,0 +1,1233 @@
+[65535]
+1=OK
+2=Cancelar
+3=Sim
+4=Não
+5=Salvar
+6=Não Salvar
+7=Abortar
+8=Não mostrar esta mensagem
+9=Abrir
+10=Nome do arquivo
+11=Tipo
+12=Pré-visualização
+13=Estilo
+14=Tamanho
+15=Pressão
+16=Inclinação
+17=Renderização
+18=abcdefg ABCDEFG 01234
+19=Tamanho
+20=Modificado
+1000=Abrir Arquivo
+1001=Salvar Arquivo
+1002=Selecionar Diretório
+1003=Selecionar Cor
+1004=Selecionar Fonte
+2000=O arquivo já existe.\nDeseja sobrescrevê-lo?
+2001=O nome do arquivo não está correto.
+
+#-----------------
+# texto
+
+[0]
+0=Largura
+1=Altura
+2=Cor
+3=Densidade
+4=Pintura
+5=Antisserrilhamento
+6=Pasta
+7=Camada
+8=Nome
+
+#-------------------------------
+# JanelaPrincipal - dica de ferramenta da barra de ferramentas
+
+[4]
+0=Novo arquivo
++=Abrir
++=Sobrescrever
++=Salvar como
++=Salvar uma cópia
++=Exibir palheta
++=Girar a tela horizontalmente
++=Exibir fundo como padrão quadriculado
++=Exibir grade
++=Exibir linha divisória
++=Zoom
++=Desfazer
++=Refazer
++=Limpar camada
++=Liberar seleção
++=Arquivos recentes
+
+#-----------------------
+# drop menu - salvar duplicata
+
+[5]
+0=salvar tipo
++=mesmo tipo do arquivo atual
+
+#------------------------
+# barra de status - ajuda
+
+[8]
+0=[Shift: altera tamanho do pincel] [Ctrl: configurações da régua] [Alt: selecionar cor com conta-gotas]
++=[Shift: ignorar camada fonte da ferramenta preenchimento] [Ctrl: determinar como "transparente"]
++=[clique para inserir texto] [clique ao digitar para alterar posição]
++=[Shift:  horizontalmente] [Ctrl: verticalmente]
++=[+Ctrl quando pressionado: eliminar seleção]
++=[+Shift quando pressionado: sobrescrever] [Ctrl: ocultar quadro selecionado ao arrastar]
++=[clique para colar se houver uma imagem] [Ctrl: limpar a imagem e resselecionar]
++=[Ctrl: cor na camada atual] [Shift: define como máscara de cor] [Alt: adiciona à máscara de cor]
+
++=[Shift: em incrementos de 45°]
++=[Shift: quadrado]
++=[Shift: círculo]
++=[Shift: em incrementos de 45°] [Direito/Duplo clique esquerdo/Enter/ESC: terminar] [Backscape: conectar com o ponto inicial e terminar]
++=[Shift: em incrementos de 45°] [Direito/Duplo clique esquerdo/Enter/ESC: terminar]
++=[Shift: em incrementos de 45°] [Direito/ESC: Cancel] [Backscape: voltar ao ponto de controle 1]
++=[adicionar pontos ao clicar (+Ctrl: pressão 0)] [Backscape: voltar um] [Direito/Duplo clique esquerdo/Enter: desenhar] [ESC: cancelar]
++=[Shift: em incrementos de 45°] [Direito/Duplo clique esquerdo/Enter: desenhar] [ESC: cancelar]
+
+
+#----------------
+# ferramenta
+
+[100]
+0=Pincel
++=Ferramenta de preenchimento de forma
++=Borracha de forma
++=Ferramenta de preenchimento
++=Limpar área opaca
++=Gradiente
++=Texto
++=Mover
++=Ferramenta varinha mágica
++=Selecionar
++=Edição de retângulo
++=Carimbo
++=Mover tela
++=Rotacionar tela
++=Conta-gotas
+
+#----------------
+# tool sub
+
+[101]
+0=Mão livre
++=Linha
++=Retângulo
++=Círculo
++=Linha interrompida
++=Ponto central
++=Curva de Bezier
++=Curva Spline
+100=Retângulo
++=Elipse
++=Polígono
++=Mão livre
+200=Mover imagem
++=Copiar imagem
++=Mover posição
+300=Girar horizontalmente
++=De cima para baixo
++=Rotacionar para a esquerda 90 graus
++=Rotacionar para a direita 90 graus
++=Transformação
++=Aparar
+
+#-----------------
+# tipo de camada de cor
+
+[102]
+0=Cor cheia
++=Escala de cinza
++=Apenas valor de alfa
++=Apenas valor de alfa (1bit)
+
+#---------------------
+# modo de pixel (pincel)
+
+[103]
+0=justaposição de pixel
++=justaposição de pincelada
++=sobrescrever comparando a A
++=sobrecrever forma
++=sobrescrever retângulo
++=subexpor
++=superexpor
++=adição
++=borracha
+
+#--------------------
+# modo de pixel (ferramenta)
+
+[104]
+0=justaposição de pixel
++=sobrescrever comparando a A
++=sobrescrever
++=borracha
+
+#------------------------
+# selecionar imagem material
+
+[105]
+0=nenhuma
++=nenhuma (forçado)
++=usar texture opcional
++=normalmente circular
+100=selecionar imagem
+
+#-----------------
+# modo de mistura
+
+[106]
+0=normal
++=multiplicação
++=adição
++=subtração
++=tela (filtro de cor)
++=cobrir
++=luz intensa
++=luz suave
++=subexpor
++=superexpor
++=superexposição linear
++=luz vívida
++=luz linear
++=luz fixa
++=escurecer
++=clarear
++=diferença
+
+#----------------
+# tipo de escala
+
+[107]
+0=Vizinho mais próximo
++=mitchell
++=Lagrange
++=Lanczos2
++=Lanczos3
+
+#-----------------
+# nome do dock
+
+[108]
+0=Ferramenta
++=Opção
++=Camada
++=Pincel
++=Cor
++=Paleta de Cor
++=Controle de tela
++=Visão da tela
++=Visualizador de imagem
++=Lista de filtros
+
+
+#**********************
+# janela paleta
+#**********************
+
+
+#-------------------
+# visualizador de imagem
+
+[1000]
+0=Abrir(&O)...
++=Anterior(&P)
++=Próximo(&N)
++=Limpar(&C)
++=Definições de Operação(&S)...
++=Tela cheia(&F)
+100=Menu
++=Abrir
++=Anterior
++=Próximo
++=Zoom
+
+#------------------
+# visão da tela
+
+[1001]
+100=Tela cheia(&F)
++=Definições de Operação(&O)...
+200=Modo lupa
++=Zoom
++=Menu
+
+#-------------------
+# cor
+
+[1002]
+0=valor de entrada
+1=Valor RGB\n(texto exceto número é tratado como uma marca separada)\nexemplo:255,0,128
+
+100=definir cor de pintura como máscara de cor(&S) [clique esquerdo]
++=adicionar cor de pintura à máscara de cor(&A)
++=converter máscara de cor na primeira cor apenas(&F)
++=eliminar cor selecionada(&D) [Ctrl+clique esquerdo]
++=definir cor selecionada como cor de pintura(&P) [Shift+clique esquerdo]
+
+#----------------------
+# paleta de cor
+
+[1003]
+0=paleta
++=HLS
++=cor neutra
+
+100=definição de segmento
++=segmento (3~64, 0 para o maior)
+
+1000=definir cor aqui(&S) [Shift+clique esquerdo]
++=procure esta cor(&P) [clique esquerdo]
+
+1100=Editar(&E)...
++=Alterar contagem(&R)...
++=Obter paleta a partir da imagem(&M)...
++=Tornar tudo branco(&C)...
++=Carregar arquivo(&L)...
++=Salvar para arquivo(&S)...
++=tela de configuração(&O)...
+
+1200=Alterar contagem
++=contagem
++=Paleta atual ficará toda branca,OK?
++=tela de configuração
++=O número máximo de horizontal\n(0 = automático)
+
+#------------------
+# opção
+
+[1004]
+0=ferramenta
++=régua
++=textura
++=desvanecimento
+
+#------------------
+# camada
+
+[1005]
+## dica da ferramenta
+0=nova
++=copiar
++=apagar imagem
++=eliminar
++=mesclar com a camada abaixo
++=mover a imagem para a camada abaixo
++=mover para cima
++=mover para baixo
+
+## máscara alfa
+100=máscara alfa DESLIG
++=manter valor de alfa
++=proteger transparência
++=proteger opacidade
+
+## menu
+1000=Definição(&O)...
++=Definir cor(&C)...
++=Alterar tipo de camada(&T)...
++=Paleta1(&P)
++=Paleta2(&A)
++=Travar pintura(&L)
++=Fonte da ferramenta preenchimento(&F)
++=Definir camada de máscara(&S)
++=Definir máscara da camada abaixo(&M)
++=Marcar(&K)
++=Crie uma nova camada no topo desta pasta(&N)
++=Mover a camada de seleção para esta pasta(&V)
+
+#---------------------
+# pincel - lista de tamanho
+
+[1006]
+0=Adicionar(&A)
++=Eliminar(&D) [Shift+clique esquerdo]
+100=Adicionar
++=Por favor inserir o tamanho do pincel.\nAdições múltiplas através de '/'. (exemplo: 1.0/2.4/100)
+
+#----------------------
+# pincel - lista de pincéis
+
+[1007]
+0=Novo pincel(&B)
++=Colar novo pincel(&P)
++=Novo grupo(&G)
++=Definir grupo(&O)
++=Editar grupos e pincéis(&E)
+
+100=Renomear(&N)
++=Copiar(&C)
++=Colar e sobrescrever(&P)
++=Eliminar(&D)
++=Definir pincel registrado(&R)
++=Carregar pincel registrado(&L)
+200=Novo grupo
++=Definir grupo
++=coluna
++=Renomear
+1000=Não é possível colar dados do pincel
+
+#----------------------
+# pincel - valor do item
+
+[1008]
+10=principal
++=min & intervalo
++=aleatório
++=água
++=forma
++=rotação de forma
++=pressão
++=outro
+
+100=tipo
++=raio
++=densidade
++=pintura
++=correção
++=tamanho mínimo (%)
++=densidade mínima (%)
++=intervalo de ponto (1.0 = raio)
++=tamanho mínimo (%)
++=posição de máxima distância
++=predefinição
++=reposição de cor
++=taxa de cor da tela
++=percentagem da cor de pintura
++=dureza
++=aspereza
++=direção de deslocamento
++=ângulo
++=largura aleatória do ângulo
++=textura
++=antisserrilhamento
++=complemento de curva
+
+200=normal
++=borracha
++=aquarela
++=borrão
++=caneta de ponto de 1px
++=ponta do dedo
+
+220=não
++=fraco
++=médio
++=forte
+
+230=curva
++=linear um ponto
++=linear dois pontos
+
+240=registrar em %c
++=redefinir
+
+
+#**********************
+# opção de ferramenta
+#**********************
+
+
+#---------------
+# mover
+
+[1100]
+0=Camada atual
++=Camada selecionada
++=Todas as camadas
+
+#---------------
+# gradação
+
+[1101]
+0=cor de pintura -> cor de fundo
++=Aleatório
++=Reverter
++=Repetir
+
+100=Editar(&E)...
++=Novo(&N)
++=Copiar(&C)
++=Eliminar(&D)
+
+#-----------------------
+# ferramenta de preenchimento/varinha mágica
+
+[1102]
+0=determinar
++=diferença de cor
++=ignorar camada fonte da determinação
+100=RGB (*existe apenas uma fonte de determinação)
++=valor de alfa
++=transparência (antisserrilhamento é automático)
++=cor da tela
+
+#---------------
+# carimbo
+
+[1103]
+0=limpar
++=carregar imagem
++=sobrescrever
++=colar baseado no topo esquerdo
+
+#--------------
+# régua
+
+[1104]
+0=DESLIG
++=linha paralela
++=linha paralela (grade)
++=ponto central
++=círculos concêntricos (Círculo)
++=círculos concêntricos (Elipse)
+100=extrair
++=gravar
+
+#---------------
+# começo/fim
+
+[1105]
+0=Linha
++=Curva de Bezier
++=fade in
++=fade out
++=extrair
++=gravar
+
+
+#**********************
+# diálogo
+#**********************
+
+
+#----------------
+# diálogo de arquivo
+
+[2000]
+1=Ignorar canal alfa
+
+#------------------------------------
+# visualização da tela/visualizador de imagem - definição
+
+[2001]
+0=definição de controle
++=esquerda
++=Ctrl+esquerda
++=Shift+esquerda
++=direita
+100=rolagem da visualização
++=rolagem da tela
++=arraste para cima ou para baixo para alterar a taxa de zoom 
+200=Scroll
++=arraste para cima ou para baixo para alterar a taxa de zoom
++=conta-gotas (cor de pintura)
++=conta-gotas (cor de fundo)
+
+#---------------------
+# definição de grade
+
+[2002]
+0=definição de grade
++=Grade
++=Linha divisória
++=horiz
++=vert
+
+#--------------------
+# nova imagem
+
+[2003]
+0=Nova
++=Resolução
++=Tipo de camada
++=Adicionar
++=Eliminar
+100=Histórico
++=Registro
++=Modelo
+
+#------------------
+# edição de paleta
+
+[2004]
+0=Edição de paleta
+
+#-------------------
+# diálogos de camada
+
+[2005]
+0=Nova
++=Selecionar cor
++=Definir camada
++=Alterar tipo de cor
++=Mesclar várias camadas
+
+100=tipo
++=modo de mistura
++=cor
++=[paleta]\nClique direito/Ctrl+clique esquerdo: registrar cor
++=Duplo clique na miniatura da imagem na lista de camada\nexibirá uma caixa de diálogo de selecão de cor.
++=luminância de cor invertida para valor de alfa
++=mesclar com nova camada
++=tipo de cor
++=Se o modo de mistura é outro além de "normal", ele poderá não mesclar-se corretamente.\nContudo, exceto quando a camada inferior está completamente opaca.
++=Editar lista de registro(&E)
++=Editar lista de registro do nome da camada
++=Favor especificar lista múltipla de nomes de camada, separados por ";".\n[exemplo] camada1;camada2;camada3
+
+200=todas as camadas visíveis
++=todas as camadas visíveis na pasta
++=camadas marcadas (quando em nova camada)
+
+#--------------------
+# editar gradiente
+
+[2006]
+0=Editar gradiente
++=cor
++=posição
++=cor de pintura
++=cor de fundo
++=cor atribuída
++=opacidade
++=valor
++=repetir (sempre)
++=monocrômico
++=+Ctrl : Pontos separados da atual à posição pressionada uniformemente espaçados\n+Shift : definir cor atual à position pressionada\n+Alt : eliminar ponto
+
+100=eliminar ponto atual(&D)
++=dividir os espaços uniformemente(&V)
++=mover para o meio dos pontos esquerdo e direito(&C)
++=definir todos os pontos uniformemente espaçados(&E)
++=Reverter pontos(&R)
+
+#-----------------
+# alterar tamanho da tela
+
+[2007]
+0=alterar tamanho da tela
++=configurar
++=cortar área externa
+
+#--------------------
+# escalonar tela
+
+[2008]
+0=escalonar tela
++=tamanho(px)
++=%
++=manter taxa de proporção
++=alterar DPI
++=método de interpolação
+
+#-------------------
+# Alterar valor de DPI
+
+[2009]
+0=Alterar valor de DPI
++=Favor entrar com o valor de DPI.\nApenas reescrevendo o valor, não há alteração na imagem.
+
+#--------------------
+# salvar opção
+
+[2010]
+0=salvar definições
++=taxa de compressão [0-9]
++=canal alfa
++=↑Mesclar todos os modos de camadas em Normal
++=qualidade [0-100]
++=taxa de amostragem
++=progressivo
++=sem compressão
+100=manter camada
++=uma pintura (8bit RGB)
++=uma pintura (escala de cinza)
++=uma pintura (monocrômico)
+110=4:4:4 (alta qualidade)
++=4:2:2
++=4:2:0 (baixa qualidade)
+
+#--------------------------
+# Definições detalhadas de pincel
+
+[2011]
+0=Definições detalhadas de pincel
++=sempre salvar quando o valor se altera
++=Raio
++=valor mínimo
++=valor máximo
+
+#----------------------------
+# Editar grupos e pincéis
+
+[2012]
+0=Editar grupos e pincéis
++=Grupo
++=Pincel
+
+100=Adicionar
++=Eliminar
++=Editar
++=Copiar
++=Colar
++=Mover para cima
++=Mover para baixo
++=Mover grupo
+
+500=renomear
+
+1000=Eliminar o grupo. É isso mesmo?\nEsta operação não pode ser desfeita.
++=Não pode ser eliminado se houver apenas um grupo
+
+#-------------------------
+# selecionar expandir/encolher
+
+[2013]
+0=selecionar expandir&encolher
++=Número de pixels (encolher com valores negativos)
+
+#---------------------------------
+# Edição de retângulo - transformar
+
+[2014]
+0=Transformação
++=Redefinir
++=ampliação X
++=ampliação Y
++=rotação
++=Determinar
++=Manter taxa de proporção
++=[Ctrl+esquerda, botão do meio]\nrolagem de tela\n[Shift+esquerda]\nzoom
+100=normal
++=perspectiva
+
+#----------------------
+# Texto
+
+[2015]
+0=Texto
++=Previsão
++=- Clique esquerdo dentro da tela altera a posição do desenho.\n- Na caixa de inserção de texto,usar [Ctrl+seta para cima/para baixo/esquerda/direita] para mover a posição do desenho em 1 px.
++=Estilo
++=Negrito
++=Itálico
++=Tamanho
++=Hinting
++=Espaçamento entre palavras
++=Entrelinha
++=inserir texto verticalmente
++=antisserrilhamento
+100=Padrão
++=nenhum
++=Normal
++=Max
+110=Normal
++=Negrito
+120=Normal
++=Itálico
++=Oblíquo
+
+#-----------------------
+# Definição de teclas de atalho
+
+[2016]
+0=Definição de teclas de atalho
++=Comando
++=Tecla
++=Limpar
++=Limpar tudo
+
+#--------------------
+# definição de tecla de tela
+
+[2017]
+0=definição de tecla de tela
++=Ao definir o item selecionado,\nfavor pressionar uma única tecla.\nVocê pode limpá-la pressionando espaço.
++=Limpar tudo
+
+100=alterar ferramenta
++=alterar tipo de pintura
++=outros comandos
++=+tecla para operar a ferramenta
++=+tecla para operar o pincel de desenho
++=+tecla para operar outras coisas
++=+tecla para operar a ferramenta de seleção
+
+1000=selecionar uma camada acima
++=selecionar uma camada abaixo
++=tornar camada atual visível/invisível
++=intercambiar cor de pintura/fundo
++=expandir em um nível a taxa de zoom
++=reduzir em um nível a taxa de zoom
++=redefinir rotação da tela
++=desfazer
++=refazer
++=trocar pelo pincel anterior
++=selecionar o pincel anterior
++=selecionar o próximo pincel
+
+1100=desenho à mão livre com pincel registrado
++=desenho à mão livre com pincel registrado (pressão máxima)
++=alterar taxa de zoom (arrastar para cima-para baixo)
++=alterar tamanho do pincel (arrastar para a esquerda-direita)
++=alterar tamanho do pincel registrado (arrastar para a esquerda-direita)
++=gerar cor mediana (clicar em 2 pontos)
++=alterar cor (cor selecionada com conta-gotas-->cor de pintura)
++=alterar cor (cor selecionada com conta-gotas-->transparente)
+
+1200=selecionar:retângulo
++=selecionar:polígono
++=selecionar:mão livre
++=mover imagem
++=copiar imagem
++=mover posição da selecão
+
+#--------------------
+# Definição de paleta
+
+[2018]
+0=Definição de paleta
+
+#----------------------
+# Definição de Ambiente
+
+[2019]
+0=Definição de Ambiente
++=Definição 1
++=Definição 2
++=Alcance de zoom
++=Controle
++=Sistema
++=Cursor
+
+100=largura da imagem ao iniciar
++=altura da imagem ao iniciar
++=cor de fundo da tela
++=cor do fundo quadriculado
++=max de vezes do desfazer [2-400]
++=tamanho de buffer do desfazer
++=startup de DPI
+
+200=confirmar ao sobrescrever
++=confirmar ao salvar em formatos de arquivo diferentes de APD
++=ao salvar como APD, não é permitida inclusão de imagem única
++=clique duas vezes na lista de filtro para executá-lo
+
+300=um nível de taxa de zoom (~100%)
++=um nível de taxa de zoom (100%~)
++=um nível de rotação de tela
++=ao usar o arrastar para direita-esquerda, o tamanho do pincel alterará um pixel de cada vez
+
+500=diretório de trabalho
++=diretório de pincel
++=diretório de textura
+
+600=posição do ponto de acesso
++=carregar imagem
++=Padrão
++=Largura,altura entre 1~32px.\ncor preta e branca da imagem permanecerá preta e branca.\nOutras cores serão transformadas em transparência.
+
+1000=um diretório não existente está definido como diretório de trabalho.
++=Unidades podem ser utilizadas para K,M,G. Byte sem unidade.\nMáximo de 1 GB.\n0 para saída de todos os arquivos.
+
+#----------------------
+# filtro
+
+[2020]
+1=redefinir
++=prosseguir apenas na área interna da tela
+10=brilho
++=contraste
++=valor de gama
++=fase de cor
++=croma
++=limite
++=tipo
++=gradação
++=raio
++=número de ciclo
++=vívido
++=cor
++=número de linha
++=densidade
++=ângulo
++=DPI
++=antisserrilhamento
++=tamanho
++=usar cor média
++=ângulo R
++=ângulo G
++=ângulo B
++=definir ângulo de G,B como o mesmo de R
++=escala de cinza
++=espessura
++=espessura min
++=espessura max
++=espaço min
++=espaço max
++=linha horizontal
++=linha vertical
++=alcance horizontal
++=alcance vertical
++=definir alcance vertical como o mesmo do alcance horizontal
++=força
++=quantidade
++=densidade
++=aleatório:raio min(%)
++=aleatório:densidade min(%)
++=tipo de ponto
++=distância
++=reverter
++=comprimento
++=largura
++=fazer loop lateral
++=Clique esquerdo na tela,\nvocê será capaz de alterar a posição central.
++=fundo
++=zoom
++=suavizar
++=depressão
++=número de vezes
++=marcar fonte de camada
++=recortar imagem fonte
++=ênfase
++=número de cores
++=taxa de proporção
++=espaço:aleatório
++=espessura:aleatória
++=comprimento:aleatório
++=comprimento de onda
++=desvanecimento de espessura
++=previsualização simples
++=previsualização em vermelho
+
+1000=Bayer2x2
++=Bayer4x4
++=Espiral
++=Ponto
++=Aleatório
+
+1010=Preto/Branco
++=cor de pintura/cor de fundo
++=preto+valor de alfa
+
+1020=cor de pintura
++=cor de fundo
++=preto
++=branco
+
+1030=círculo de ponto
++=círculo com antisserrilhamento
++=círculo suave
+
+1040=cor de pintura
++=aleatório (escala de cinza)
++=aleatório (fase de cor)
++=aleatório (RGB)
+
+1050=lado exterior da área de opacidade
++=lado interior da área de opacidade
+
+1060=inclinação
++=horizontal
++=vertical
+
+1070=valor mínimo
++=valor médio
++=valor máximo
+
+1080=apenas horizontal
++=apenas vertical
++=ambos
+
+1090=coordenadas retangulares -> coordenadas polares
++=coordenadas polares -> coordenadas retangulares
+
+1100=transparência
++=cor da borda
++=outros
+
+1110=pincel (antisserrilhamento)
++=pincel (sem antisserrilhamento)
++=caneta de ponto de 1px
+
+
+#**********************
+# outros
+#**********************
+
+
+#----------------
+# mensagem de erro
+
+[1]
+1=falhou
++=alocação de memória falhou
++=formato não está correspondendo
++=carregamento falhou
++=tamanho é muito grande
++=pode apenas ler arquivos APD ver3
++=A tecla já está em uso.
++=Camada alvo não pode ser pintada por causa da pasta.
++=Camada alvo não pode ser pintada pois está travada.
++=favor marcar a camada que deseja ver de acordo com a lista de camada.
++=Imagem de textura não está definida.
++=Uma vez que a camada atual está com o tipo de cor sem informação de cor,\no filtro não surtirá efeito
+
+#------------------
+# mensagem
+
+[2]
+0=Sobrescrever e salvar?
++=Parece que você está tentando salvar em um formato que não o APD.\nGostaria de sobrescrever mesmo assim?
++=A imagem foi alterada.\nDeseja salvá-la?
++=Criação do diretório de trabalho falhou.\nO desfazer não funcionará apropriadamente.
++=Gostaria de migrar os dados de pincel e paleta da ver.1?\n(Dados de gradação são compartilhados com a ver.1)
+
+#--------------------
+# marcação de Máscara
+
+[6]
+0=Estado da máscara
++=seleção
++=camada - travar
++=camada - máscara na camada inferior
++=camada - máscara de alfa
++=máscara de camada
++=máscara de cor
+
+#--------------------
+# mensagem de desenho
+
+[7]
+1=Você está tentando desenhar em uma pasta
++=Camada atual está travada
++=Você está tentando desenhar em uma camada oculta
+
+#----------------
+# menu principal
+
+[3]
+1=Arquivo(&F)
++=Editar(&E)
++=Camada(&L)
++=Seleção(&S)
++=Filtro(&T)
++=Visualizar(&V)
++=Definição(&O)
+
+### arquivo
+1000=Novo(&N)...
++=Abrir(&O)...
++=Salvar(&S)
++=Savar como(&W)...
++=Salvar uma cópia(&D)...
++=Arquivos recentes(&R)
++=Sair(&X)
+
++=Limpar Histórico(&C)
+
+### editar
+2000=Desfazer(&Z)
++=Refazer(&Y)
++=Verificar o estado das máscaras(&M)
++=Preencher(&F)
++=Apagar(&E)
++=Alterar tamanho da tela(&S)...
++=Redimensionar Tela(&R)...
++=Alterar valor de DPI(&D)...
+
+### selecionar
+3000=Desselecionar(&D)
++=Reverter(&I)
++=Selecionar tudo(&A)
++=Copiar(&C)
++=Recortar(&X)
++=Colar nova camada(&V)
++=Expandir/Encolher(&E)...
+
+### camada
+4000=Nova camada(&N)...
++=Nova pasta(&F)
++=Nova camada do arquivo(&I)...
++=Copiar(&C)
++=Eliminar(&D)
++=Apagar(&X)
++=Definir(&O)...
++=Definir cor(&R)...
++=Alterar tipo de cor(&T)...
++=Mover imagem para camada abaixo(&Z)
++=Mesclar com a camada abaixo(&B)
++=Mesclar várias camadas(&W)...
++=Mesclar tudo(&M)
++=Editar(&E)
++=Visualizar(&V)
++=Bandeira(&G)
++=Exportar para arquivo(&S)...
+
+4100=Girar horizontalmente(&H)
++=De cima para baixo(&V)
++=Rotacionar à esquerda 90 graus(&L)
++=Rotacionar à direita 90 graus(&R)
+
+4200=Mostrar tudo(&A)
++=Ocultar tudo(&H)
++=Mostrar camada atual apenas(&C)
++=Alternar camada marcada(&K)
++=Alternar camadas excluindo pastas(&N)
+
+4300=Destravar tudo(&L)
++=Todas as camadas fonte de determinação estão desligadas(&F)
++=Desmarcar tudo(&K)
+
+### filtro
+5000=Cor
++=Substituição de cor
++=Valor de alfa (camada marcada)
++=Valor de alfa (camada atual)
++=Borrão
++=Pintura
++=Pintura (quadrinho)
++=Pixelado
++=Contorno
++=Efeito
++=Transformação
++=Outros
+
+5100=Brilho/Contraste...
++=Gama...
++=Nível...
++=RGB...
++=Ajuste de HSV...
++=Reversão de negativo-positivo
++=Escala de cinza
++=Cor sépia
++=Mapa de gradiente
++=Limiar...
++=Limiar (Pontilhamento)...
++=Posterização...
++=Redução de cor...
+
++=Alterar cor de pintura...
++=Alterar cor de pintura para transparência
++=Alterar cor exceto cor de pintura para transparência
++=Alterar cor de pintura para cor de fundo
++=Alterar cor de transparência para cor de pintura
+
++=(múltiplo) todos os pontos de transparência para transparente
++=(múltiplo) qualquer ponto opaco para transparente
++=(múltiplo) combinar todos os valores e copiar
++=(múltiplo) adicionar todos os valores
++=(múltiplo) subtrair todos os valores
++=(múltiplo) multiplicar todos os valores
++=(único) reverter brilho da camada marcada e definir
++=(único) definir brilho da camada marcada
++=Definir brilho revertido
++=Definir do brilho
++=Aplicação de textura
++=Criar escala de cinza a partir do valor de alfa
+
++=Borrão...
++=Borrão gaussiano...
++=Borrão de movimento...
++=Borrão radial...
++=Borrão de lente...
+
++=Nuvem...
++=Ponto(1)...
++=Ponto(2)...
++=Desenho de ponto aleatório...
++=Desenhar pontos ao longo da borda...
++=Contorno...
++=Linha horizontal&&linha vertical...
++=Quadriculado...
+
++=Linha de concentração...
++=Clarão...
++=Clarão sólido...
++=Uni flash...
++=Uni flash(onda)...
+
++=Mosaico...
++=Cristal...
++=Meio tom
+
++=Apurar...
++=Desfocar máscara...
++=Extração de contorno (Sobel)
++=Extração de contorno (Laplaciano)
++=Passagem alta...
+
++=Brilho...
++=Compensação RGB...
++=Pintura a Óleo...
++=Alto-relevo...
++=Ruído...
++=Difusão...
++=Arranhar...
++=Mediana...
++=Borrão...
+
++=Onda...
++=Ondulação...
++=Coordenadas polares...
++=Compensação radial...
++=Espiral...
+
++=Extração de desenho de linha
++=Correção de linha de ponto de 1px
++=Antisserrilhamento...
++=Afiar...
++=Quadro tridimensional...
++=Mudança...
+
+### Exibir
+6000=Paleta(&P)
++=Girar tela horizontalmente(&Q)
++=Mostrar fundo como padrão quadriculado(&K)
++=Mostrar grade(&G)
++=Mostrar linha divisória(&M)
++=Barra de ferramentas(&T)
++=Barra de status(&S)
++=Taxa de zoom da tela(&C)
++=Rotação da tela(&R)
+
+6100=Visualizar(&V)
++=Definir para modo de janela(&W)
++=Tudo armazenado na barra lateral(&S)
++=Ferramenta(&T)
++=Opção(&O)
++=Camada(&L)
++=Pincel(&B)
++=Cor(&C)
++=Paleta de cor(&P)
++=Operação de tela(&R)
++=Visualização de tela(&V)
++=Visualização de imagem(&I)
++=Lista de filtro(&F)
+
+6200=Expandir 1 nível(&U)
++=Reduzir 1 nível(&D)
++=Ajustar à janela(&F)
+
+6300=Rotacionar um passo para a esquerda(&L)
++=Rotacionar um passo para a direita(&R)
++=0 graus
++=90 graus
++=180 graus
++=270 graus
+
+### Outras definições
+7000=Definição de ambiente(&E)...
++=Definição de grade(&G)...
++=Definição de tecla de atalho(&K)...
++=Definição de tecla de tela(&C)...
++=Definição de paleta(&P)...
++=Informação de versão(&A)...
