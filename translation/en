@@ -821,9 +821,9 @@
 
 [2018]
 0=Panel setting
-+=panel
-+=pane
-+=pane%d
++=panels
++=position
++=panel%d
 +=Canvas
 
 #----------------------
@@ -864,7 +864,7 @@
 +=tool action
 +=other action
 +=command
-+=buttom
++=button
 +=Please push button on this
 +=set
 
@@ -1101,7 +1101,7 @@
 +=Fill(&F)
 +=Erase(&E)
 +=Change canvas size(&S)...
-+=Canvas Resize(&R)...
++=Resize canvas(&R)...
 +=Change DPI value(&D)...
 
 ### select
@@ -1112,7 +1112,7 @@
 +=Cut(&X)
 +=Paste new layer(&V)
 +=Expand/Shrink(&E)...
-+=Output image in range to PNG(&P)
++=Export selection to PNG(&P)
 
 ### layer
 4000=New layer(&N)...
