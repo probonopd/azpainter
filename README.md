@@ -11,13 +11,12 @@ It is mainly full color painting software for illustration drawing.
 
 ## Operating environment
 
-* X11R6 or later
+* X Window System (X11R6 or later)
   * (X11R 7.5 or later when you want to recognize pen pressure)
 * Linux
 * macOS (with patches)
 * FreeBSD (with patches)
 
-g
 ## What you need to compile
 
 - gcc
