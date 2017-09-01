@@ -1,11 +1,8 @@
 # About
 > AzPainter
-> Copyright (C) 2013-2017 Azel
+> Copyright (C) 2013-2017 Azel <azelpg@gmail.com>
 >
-> http://azsky2.html.xdomain.jp/
-> https://osdn.net/projects/azpainter/
->
-> <azelpg@gmail.com>
+> http://azsky2.html.xdomain.jp/linux/azpainter
 
 ## Overview
 
@@ -14,12 +11,11 @@ It is mainly full color painting software for illustration drawing.
 
 ## Operating environment
 
-Supported OS
-- Linux
-- X11R6 or later
-  (X11R 7.5 or later when you want to recognize pen pressure)
-- macOS (with patches)
-- FreeBSD (with patches)
+* X11R6 or later
+  * (X11R 7.5 or later when you want to recognize pen pressure)
+* Linux
+* macOS (with patches)
+* FreeBSD (with patches)
 
 
 ## What you need to compile
@@ -37,7 +33,7 @@ Supported OS
 - libjpeg
 
 
-## Required packages in each distribution
+### Required packages in each distribution
 
 * Debian/Ubuntu
   ```
@@ -45,7 +41,9 @@ Supported OS
   libfontconfig1-dev zlib1g-dev libjpeg-dev
   ```
   * Debian 9.0 / Ubuntu 16.10 or later
+  ```
   libpng-dev
+  ```
   * before Debian 8.0 / Ubuntu 16.04
   ```
   libpng12-dev
