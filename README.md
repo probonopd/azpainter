@@ -2,7 +2,7 @@
 > AzPainter
 > Copyright (C) 2013-2017 Azel <azelpg@gmail.com>
 >
-> http://azsky2.html.xdomain.jp/linux/azpainter
+> http://azsky2.html.xdomain.jp/linux/azpainter.html
 
 ## Overview
 
@@ -17,7 +17,7 @@ It is mainly full color painting software for illustration drawing.
 * macOS (with patches)
 * FreeBSD (with patches)
 
-
+g
 ## What you need to compile
 
 - gcc
